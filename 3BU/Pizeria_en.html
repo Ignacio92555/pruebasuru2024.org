@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>  
+    <style>
+        body {
+            background-color: white; /* Fondo blanco por defecto */
+            color: black; /* Color de texto */
+        }
+
+        body.dark-mode {
+            background-color: black; /* Fondo negro para el modo oscuro */
+            color: white; /* Color de texto para el modo oscuro */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorButton = document.getElementById('colorButton');
+
+            colorButton.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</head> 
+<body>
+    <header style="background-color: gray;">
+        <h1>Welcome to my Pizzeria</h1>
+        <img src="https://i.ibb.co/bmyPNTR/Pizza-Logo-Design-Graphics-29132095-1.jpg" alt="Pizza-Logo-Design-Graphics-29132095-1" height="20%" width="20%">     
+        <footer>
+            <li><a href="https://www.instagram.com/?lang=en">About us</a></li>
+        </footer>
+        <footer>
+            <li><a href="https://web.whatsapp.com/?lang=en">Contact us</a></li>
+        </footer>
+        <footer>
+            <li><a href="https://www.dominospizza.com.uy/?lang=en">Our Service</a></li>
+        </footer>
+    </header>
+</center>
+<center style="background-color: brown;">
+
+
+    <main>
+        <section>
+            <h2>Pizza 1</h2>
+            <p>It has Cheddar and bacon</p>
+            <p>It has mozzarella and oregano</p>
+        </section>
+        <section>
+            <h2>MORE PIZZAS</h2>
+            <table border="3">
+                <caption>Pizza Tables</caption>
+                <tr>
+                    <th>Order Number</th>
+                    <th>Request</th>
+                </tr>
+                <tr>
+                    <td>Order 1</td>
+                    <td>Cheddar and bacon</td>
+                </tr>
+            </table>
+        </section>  
+    </main>
+    <footer>
+        <img src="https://i.ibb.co/Jtj7JH6/photo.jpg" alt="photo" height="20%" width="20%">    
+    </footer>
+    <footer> 
+        <video src="C:\Users\vicky\OneDrive\Escritorio\3BU\3BU\mp4\Pizza_mp4.mp4" controls alt="Pizza_mp4" height="60%" width="60%"></video>
+    </footer
+</center>
+    <footer style="position: absolute; top: 10px; right: 10px;">
+        <button  id="colorButton" style="background-color: black; color: white;">ON/OFF</button>
+    </footer>
+
+    <body>
+        <!-- Lista desplegable de idiomas -->
+        <select onchange="changeLanguage(this.value)" style="position: absolute; top: 50px; right: 10px;">
+            <option value="" selected disabled>Select a language</option>
+            <option value="Pizeria_esp.html">Spanish</option>
+            <option value="Pizeria_en.html">English</option>
+            <option value="Pizeria_jap.html">Japanese</option>
+            <option value="Pizeria_ru.html">Russian</option>
+            <option value="Pizeria_pt.html">Portuguese</option>
+            <option value="Pizeria_zh.html">Chinese</option>
+        </select>
+        
+        <script>
+            // Función para redirigir a la página del idioma seleccionado
+            function changeLanguage(language) {
+                if (language) {
+                    window.location.href = language;
+                }
+            }
+        </script>
+    </body>
+</html>

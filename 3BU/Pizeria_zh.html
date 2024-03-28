@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>  
+    <style>
+        body {
+            background-color: white; 
+            color: black; 
+        }
+
+        body.dark-mode {
+            background-color: black; 
+            color: white; 
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorButton = document.getElementById('colorButton');
+
+            colorButton.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</head> 
+<body>
+
+    <header style="background-color: gray;">
+        <h1>欢迎光临我的比萨店</h1>
+        <img src="https://i.ibb.co/bmyPNTR/Pizza-Logo-Design-Graphics-29132095-1.jpg" alt="Pizza-Logo-Design-Graphics-29132095-1" height="20%" width="20%">
+        
+        <footer>
+            <li><a href="https://www.instagram.com/?lang=zh">关于我们</a></li>
+        </footer>
+        <footer>
+            <li><a href="https://web.whatsapp.com/?lang=zh">联系方式</a></li>
+        </footer>
+        <footer>
+            <li><a href="https://www.dominospizza.com.uy/?lang=zh">我们的服务</a></li>
+        </footer>
+    </header>
+</center>
+<center style="background-color: brown;">
+    <main>
+        <section>
+            <h2>比萨 1</h2>
+            <p>含有切达干酪和培根</p>
+            <p>含有马苏里拉干酪和牛至</p>
+        </section>
+        <section>
+            <h2>更多比萨</h2>
+            <table border="3">
+                <caption>比萨菜单</caption>
+                <tr>
+                    <th>订单编号</th>
+                    <th>订单内容</th>
+                </tr>
+                <tr>
+                    <td>订单 1</td>
+                    <td>切达干酪和培根</td>
+                </tr>
+            </table>
+        </section>  
+    </main>
+
+    <footer>
+        <img src="https://i.ibb.co/Jtj7JH6/photo.jpg" alt="photo" height="20%" width="20%">
+    </footer>
+</center>
+    <section style="position: absolute;  top: 63%; left: 28%;"> <!-- Ajuste de posición y tamaño -->
+        <footer>
+            <h3 style="text-align: center;">薯条份量</h3>
+            <table border="1" style="margin: 0 auto;">
+                <caption style="font-weight: bold;">薯条详细信息</caption>
+                <tr>
+                    <th style="padding: 5px;">数量</th>
+                    <th style="padding: 5px;">价格</th>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">1</td>
+                    <td style="padding: 5px;">100</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">2</td>
+                    <td style="padding: 5px;">150</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">3</td>
+                    <td style="padding: 5px;">200</td>
+                </tr>
+            </table>    
+        </footer>
+    </section>
+    
+    <footer> 
+        <img src="C:\Users\vicky\OneDrive\Escritorio\3BU\3BU\img\Papas.webp" alt="Papas.webp" height="20%" width="15%" style="position: absolute;  top: 98.3%; left: 25%;"> <!-- Ajuste de tamaño -->
+    </footer>
+    <center style="background-color: brown;">
+    <footer> 
+        <video src="C:\Users\vicky\OneDrive\Escritorio\3BU\3BU\mp4\Pizza_mp4.mp4" controls alt="Pizza_mp4" height="60%" width="60%"></video>
+    </footer
+</center>
+
+    <footer style="position: absolute; top: 10px; right: 10px;">
+        <button id="colorButton" style="background-color: black; color: white;">ON/OFF</button>
+    </footer>
+
+
+    <body>
+        <!-- Language dropdown list -->
+        <select onchange="changeLanguage(this.value)" style="position: absolute; top: 50px; right: 10px;">
+            <option value="" selected disabeld>选择语言</option>
+            <option value="Pizeria_en.html">英语</option>
+            <option value="Pizeria_esp.html">西班牙语</option>
+            <option value="Pizeria_it.html">意大利语</option>
+            <option value="Pizeria_jap.html">日语</option>
+            <option value="Pizeria_ru.html">俄语</option>
+            <option value="Pizeria_pt.html">葡萄牙语</option>
+            
+        </select>
+        
+        <script>
+            // Function to redirect to the selected language page
+            function changeLanguage(language) {
+                if (language) {
+                    window.location.href = language;
+                }
+            }
+        </script>
+    </body>
+
+</body>
+</html>

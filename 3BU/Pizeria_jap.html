@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>  
+    <style>
+        body {
+            background-color: white; 
+            color: black; 
+        }
+
+        body.dark-mode {
+            background-color: black; 
+            color: white; 
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorButton = document.getElementById('colorButton');
+
+            colorButton.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</head> 
+<body>
+    <header style="background-color: gray;">
+        <h1>私のピザ屋へようこそ</h1>
+        <img src="https://i.ibb.co/bmyPNTR/Pizza-Logo-Design-Graphics-29132095-1.jpg" alt="ピザロゴデザイングラフィックス29132095-1" height="20%" width="20%">
+        <footer>
+            <li><a href="https://www.instagram.com/?lang=jp">私たちは</a></li>
+        </footer>
+        <footer>
+            <li><a href="https://web.whatsapp.com/?lang=jp">連絡先</a></li>
+        </footer>
+        <footer>
+            <li><a href="https://www.dominospizza.com.uy/?lang=jp">私たちのサービス</a></li>
+        </footer>
+    </header>
+</center>
+<center style="background-color: brown;">
+
+    <main>
+        <section>
+            <h2>ピザ 1</h2>
+            <p>チェダーチーズとベーコンが入っています</p>
+            <p>モッツァレラチーズとオレガノが入っています</p>
+        </section>
+        <section>
+            <h2>さらに多くのピザ</h2>
+            <table border="3">
+                <caption>ピザのテーブル</caption>
+                <tr>
+                    <th>注文番号</th>
+                    <th>リクエスト</th>
+                </tr>
+                <tr>
+                    <td>注文 1</td>
+                    <td>チェダーチーズとベーコン</td>
+                </tr>
+            </table>
+        </section>  
+    </main>
+</body>
+<footer>
+    <img src="https://i.ibb.co/Jtj7JH6/photo.jpg" alt="photo" height="20%" width="20%">    
+</footer>
+<footer> 
+    <video src="C:\Users\vicky\OneDrive\Escritorio\3BU\3BU\mp4\Pizza_mp4.mp4" controls alt="Pizza_mp4" height="60%" width="60%"></video>
+</footer
+</center>
+
+<footer style="position: absolute; top: 10px; right: 10px;">
+    <button  id="colorButton" style="background-color: black; color: white;">ON/OFF</button>
+</footer>
+
+
+<body>
+
+    <!-- Lista desplegable de idiomas -->
+    <select onchange="changeLanguage(this.value)" style="position: absolute; top: 50px; right: 10px;">
+        <option value="" selected disabeld>言語を選択してください</option>
+        <option value="Pizeria_esp.html">スペイン語</option>
+        <option value="Pizeria_en.html">英語</option>
+        <option value="Pizeria_it.html"> イタリア語</option>
+        <option value="Pizeria_ru.html">ロシア語</option>
+        <option value="Pizeria_pt.html">ポルトガル語</option>
+        <option value="Pizeria_zh.html">中国語</option>
+    </select>
+    
+    <script>
+        // Función para redirigir a la página del idioma seleccionado
+        function changeLanguage(language) {
+            if (language) {
+                window.location.href = language;
+            }
+        }
+    </script>
+    
+    </body>
+
+
+
+
+
+</html>
